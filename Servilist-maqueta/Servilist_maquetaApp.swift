@@ -11,7 +11,9 @@ import SwiftUI
 struct Servilist_maquetaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView {
+                MenuView()
+            }
         }
     }
 }
