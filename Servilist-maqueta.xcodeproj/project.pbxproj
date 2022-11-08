@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662086C02919865D005C74A9 /* PymeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662086BF2919865D005C74A9 /* PymeView.swift */; };
+		662086C2291AA1E4005C74A9 /* PymeComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662086C1291AA1E4005C74A9 /* PymeComponents.swift */; };
 		662501DF29185D0D00CA79F8 /* Servilist_maquetaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662501DE29185D0D00CA79F8 /* Servilist_maquetaApp.swift */; };
-		662501E129185D0D00CA79F8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662501E029185D0D00CA79F8 /* ContentView.swift */; };
 		662501E329185D0F00CA79F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662501E229185D0F00CA79F8 /* Assets.xcassets */; };
 		662501E629185D0F00CA79F8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 662501E529185D0F00CA79F8 /* Preview Assets.xcassets */; };
+		662501EF29185F5200CA79F8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662501EE29185F5200CA79F8 /* MenuView.swift */; };
+		662501F1291867BD00CA79F8 /* MenuComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662501F0291867BD00CA79F8 /* MenuComponents.swift */; };
+		8942ED9B0D74780D9DF60A4D /* Pods_Servilist_maqueta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B025BC66C4546AEDEF403AAF /* Pods_Servilist_maqueta.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641719570A94501B9EECF1E6 /* Pods-Servilist-maqueta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Servilist-maqueta.release.xcconfig"; path = "Target Support Files/Pods-Servilist-maqueta/Pods-Servilist-maqueta.release.xcconfig"; sourceTree = "<group>"; };
+		662086BF2919865D005C74A9 /* PymeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PymeView.swift; sourceTree = "<group>"; };
+		662086C1291AA1E4005C74A9 /* PymeComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PymeComponents.swift; sourceTree = "<group>"; };
 		662501DB29185D0D00CA79F8 /* Servilist-maqueta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Servilist-maqueta.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		662501DE29185D0D00CA79F8 /* Servilist_maquetaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servilist_maquetaApp.swift; sourceTree = "<group>"; };
-		662501E029185D0D00CA79F8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		662501E229185D0F00CA79F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		662501E529185D0F00CA79F8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		662501EE29185F5200CA79F8 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		662501F0291867BD00CA79F8 /* MenuComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuComponents.swift; sourceTree = "<group>"; };
+		B025BC66C4546AEDEF403AAF /* Pods_Servilist_maqueta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Servilist_maqueta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D65747464AF6A35CFE5781F1 /* Pods-Servilist-maqueta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Servilist-maqueta.debug.xcconfig"; path = "Target Support Files/Pods-Servilist-maqueta/Pods-Servilist-maqueta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +36,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8942ED9B0D74780D9DF60A4D /* Pods_Servilist_maqueta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		662086BE29198645005C74A9 /* Pyme */ = {
+			isa = PBXGroup;
+			children = (
+				662086BF2919865D005C74A9 /* PymeView.swift */,
+				662086C1291AA1E4005C74A9 /* PymeComponents.swift */,
+			);
+			path = Pyme;
+			sourceTree = "<group>";
+		};
 		662501D229185D0D00CA79F8 = {
 			isa = PBXGroup;
 			children = (
 				662501DD29185D0D00CA79F8 /* Servilist-maqueta */,
 				662501DC29185D0D00CA79F8 /* Products */,
+				F9F7D9291119E4CAA87ADDB7 /* Pods */,
+				C672B967CA6315017C4E10FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +73,10 @@
 		662501DD29185D0D00CA79F8 /* Servilist-maqueta */ = {
 			isa = PBXGroup;
 			children = (
+				662086BE29198645005C74A9 /* Pyme */,
 				662501DE29185D0D00CA79F8 /* Servilist_maquetaApp.swift */,
-				662501E029185D0D00CA79F8 /* ContentView.swift */,
+				662501ED29185F4000CA79F8 /* Menu */,
+				662501EC29185F1800CA79F8 /* Util */,
 				662501E229185D0F00CA79F8 /* Assets.xcassets */,
 				662501E429185D0F00CA79F8 /* Preview Content */,
 			);
@@ -67,6 +91,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		662501EC29185F1800CA79F8 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		662501ED29185F4000CA79F8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				662501EE29185F5200CA79F8 /* MenuView.swift */,
+				662501F0291867BD00CA79F8 /* MenuComponents.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		C672B967CA6315017C4E10FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B025BC66C4546AEDEF403AAF /* Pods_Servilist_maqueta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F9F7D9291119E4CAA87ADDB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D65747464AF6A35CFE5781F1 /* Pods-Servilist-maqueta.debug.xcconfig */,
+				641719570A94501B9EECF1E6 /* Pods-Servilist-maqueta.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 662501E929185D0F00CA79F8 /* Build configuration list for PBXNativeTarget "Servilist-maqueta" */;
 			buildPhases = (
+				E7F545482A08EEDB081F4289 /* [CP] Check Pods Manifest.lock */,
 				662501D729185D0D00CA79F8 /* Sources */,
 				662501D829185D0D00CA79F8 /* Frameworks */,
 				662501D929185D0D00CA79F8 /* Resources */,
+				C695103A911D4036822BB3EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +191,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C695103A911D4036822BB3EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Servilist-maqueta/Pods-Servilist-maqueta-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Servilist-maqueta/Pods-Servilist-maqueta-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Servilist-maqueta/Pods-Servilist-maqueta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7F545482A08EEDB081F4289 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Servilist-maqueta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		662501D729185D0D00CA79F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				662501E129185D0D00CA79F8 /* ContentView.swift in Sources */,
+				662086C2291AA1E4005C74A9 /* PymeComponents.swift in Sources */,
+				662501F1291867BD00CA79F8 /* MenuComponents.swift in Sources */,
 				662501DF29185D0D00CA79F8 /* Servilist_maquetaApp.swift in Sources */,
+				662501EF29185F5200CA79F8 /* MenuView.swift in Sources */,
+				662086C02919865D005C74A9 /* PymeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +365,7 @@
 		};
 		662501EA29185D0F00CA79F8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D65747464AF6A35CFE5781F1 /* Pods-Servilist-maqueta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +395,7 @@
 		};
 		662501EB29185D0F00CA79F8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 641719570A94501B9EECF1E6 /* Pods-Servilist-maqueta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

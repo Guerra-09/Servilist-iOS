@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import Fakery
+
 
 struct Category: Hashable {
     
@@ -79,17 +81,21 @@ struct MenuView: View {
                             HStack {
                                 ForEach(pyme, id: \.self) { pyme in
                                     
-                                    Businesses(photo: pyme.photo)
+                                    NavigationLink(destination: PymeView()) {
+                                        Businesses(photo: pyme.photo)
+                                    }
                             
                                 }
                             }
                             .frame(height: 170)
+                            
                         }
                         .scrollIndicators(.hidden)
                     }
 
                 
                     VStack(spacing: 5) {
+                        
                         HStack {
                             Text("Cerca de ti")
                                 .font(.title)
@@ -97,18 +103,21 @@ struct MenuView: View {
                             Spacer()
                         }
                         
-                        
                         ScrollView(.horizontal) {
                             HStack {
-                                ForEach(pyme, id: \.self) { pyme in
+                                ForEach(pyme.reversed(), id: \.self) { pyme in
                                     
                                     Businesses(photo: pyme.photo)
                             
                                 }
                             }
-                            .frame(height: 180)
+                            .frame(height: 170)
+                            
                         }
                         .scrollIndicators(.hidden)
+                        
+                        
+                        
                     }
                     
                    
@@ -181,6 +190,16 @@ struct MenuView: View {
         }
         
     
+    }
+    
+    
+    func getNames() -> String {
+        let faker = Faker(locale: "nb-NO")
+        
+        var name: String = faker.name.firstName()
+        
+        return name
+        
     }
 }
 
